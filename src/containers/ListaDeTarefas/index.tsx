@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux'
-import { Container, Resultado } from './styles'
+import { MainContainer, Titulo } from '../../styles/index'
 import Tarefa from '../../components/Tarefa'
 import { RootReducer } from '../../store'
 
@@ -42,8 +42,8 @@ const ListaDeTarefas = () => {
   }
   const mensagem = exibeResultado(tarefas.length)
   return (
-    <Container>
-      <Resultado>{mensagem}</Resultado>
+    <MainContainer>
+      <Titulo as="p">{mensagem}</Titulo>
       <ul>
         {tarefas.map((tarefas, index) => (
           <li key={index}>
@@ -57,7 +57,7 @@ const ListaDeTarefas = () => {
           </li>
         ))}
       </ul>
-    </Container>
+    </MainContainer>
   )
 }
 
