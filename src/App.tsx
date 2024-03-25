@@ -26,7 +26,6 @@ function App() {
         {/* <BarraLateral />
         <ListaDeTarefas /> */}
       </Container>
-      Teste
     </Provider>
   )
 }
