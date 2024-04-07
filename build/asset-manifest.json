@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/minhas-tarefas/static/js/main.6954e081.js",
+    "main.js": "/minhas-tarefas/static/js/main.efc118e2.js",
     "static/js/787.46d5c0c2.chunk.js": "/minhas-tarefas/static/js/787.46d5c0c2.chunk.js",
     "index.html": "/minhas-tarefas/index.html",
-    "main.6954e081.js.map": "/minhas-tarefas/static/js/main.6954e081.js.map",
+    "main.efc118e2.js.map": "/minhas-tarefas/static/js/main.efc118e2.js.map",
     "787.46d5c0c2.chunk.js.map": "/minhas-tarefas/static/js/787.46d5c0c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.6954e081.js"
+    "static/js/main.efc118e2.js"
   ]
 }
