@@ -1,46 +1,67 @@
-# Getting Started with Create React App
+# To-Do List com React e Redux
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto de uma aplicação de lista de tarefas (to-do list) desenvolvida com React utilizando Create React App. A aplicação permite ao usuário adicionar, remover e atualizar tarefas, além de filtrá-las com base em diferentes categorias.
 
-## Available Scripts
+## Funcionalidades Principais
 
-In the project directory, you can run:
+- Adicionar tarefas
+- Remover tarefas
+- Marcar tarefas como concluídas
+- Filtrar tarefas por:
+  - Pendente
+  - Concluída
+  - Urgente
+  - Importante
+  - Normal
 
-### `npm start`
+## Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React: Biblioteca JavaScript para construção de interfaces de usuário
+- React Router DOM: Para gerenciamento de rotas na aplicação
+- Styled Components: Para estilização dos componentes React
+- Redux: Para gerenciamento do estado da aplicação
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Como executar o projeto
 
-### `npm test`
+1. Clone o repositório para sua máquina local:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone https://github.com/alvesxdani/minhas-tarefas.git
+```
 
-### `npm run build`
+2. Navegue até o diretório do projeto:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+cd minhas-tarefas
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Instale as dependências:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm install
+```
 
-### `npm run eject`
+4. Execute o projeto:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+npm start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Isso abrirá a aplicação no seu navegador padrão. Se não abrir automaticamente, você pode acessá-la em [http://localhost:3000](http://localhost:3000).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Estrutura do Projeto
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **src/components**: Contém os componentes React da aplicação.
+- **src/containers**: Contém os containers da aplicação, que conectam os componentes ao Redux.
+- **src/store**: Contém os arquivos relacionados ao gerenciamento de estado com Redux.
+- **src/styles**: Contém os estilos da aplicação, utilizando Styled Components.
+- **src/App.js**: Arquivo principal da aplicação.
+- **src/index.js**: Arquivo de entrada da aplicação.
 
-## Learn More
+## Contribuindo
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Sinta-se à vontade para contribuir com melhorias para este projeto. Basta abrir uma issue ou enviar um pull request com suas sugestões.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Licença
+
+Este projeto está licenciado sob a [MIT License](https://opensource.org/licenses/MIT).
