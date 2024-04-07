@@ -23,8 +23,6 @@ function App() {
       <GlobalStyle />
       <Container>
         <RouterProvider router={rotas} />
-        {/* <BarraLateral />
-        <ListaDeTarefas /> */}
       </Container>
     </Provider>
   )
