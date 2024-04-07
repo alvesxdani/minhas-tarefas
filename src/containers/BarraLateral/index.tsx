@@ -17,7 +17,7 @@ const BarraLateral = ({ mostrarFiltros }: Props) => {
   const navigate = useNavigate()
 
   function voltarParaHome() {
-    navigate('/')
+    navigate('/minhas-tarefas/')
   }
   return (
     <S.Aside>
