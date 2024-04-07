@@ -27,6 +27,13 @@ export const Card = styled.div`
   padding: 16px;
   margin-bottom: 32px;
   border-radius: 16px;
+
+  label {
+    display: flex;
+    height: 24px;
+    align-items: baseline;
+    gap: 8px;
+  }
 `
 
 export const Titulo = styled.h3`
@@ -75,10 +82,6 @@ export const Botao = styled.button`
   background-color: #2f3640;
   border-radius: 8px;
   margin-right: 8px;
-`
-
-export const BotaoSalvar = styled(Botao)`
-  background-color: ${variaveis.verde};
 `
 
 export const BotaoCancelarRemover = styled(Botao)`
