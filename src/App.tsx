@@ -9,13 +9,7 @@ function App() {
   const rotas = createBrowserRouter([
     {
       path: '/minhas-tarefas/',
-      element: <Home />,
-      children: [
-        {
-          path: 'novo',
-          element: <Cadastro />
-        }
-      ]
+      element: <Home />
     },
     {
       path: '/minhas-tarefas/novo',
