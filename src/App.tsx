@@ -10,7 +10,7 @@ import Cadastro from './pages/Cadastro'
 function App() {
   const rotas = createBrowserRouter([
     {
-      path: '/',
+      path: '/minhas-tarefas/',
       element: <Home />
     },
     {
