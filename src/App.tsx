@@ -14,7 +14,7 @@ function App() {
       element: <Home />
     },
     {
-      path: '/novo',
+      path: '/minhas-tarefas/novo',
       element: <Cadastro />
     }
   ])
