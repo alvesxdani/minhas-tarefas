@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux'
-import { Container, Resultado } from './styles'
 import Tarefa from '../../components/Tarefa'
 import { RootReducer } from '../../store'
+import { MainContainer, Titulo } from '../../styles'
 
 const ListaDeTarefas = () => {
   const { itens } = useSelector((state: RootReducer) => state.tarefas)
@@ -38,12 +38,12 @@ const ListaDeTarefas = () => {
     } else {
       mensagem = `${quantidade} tarefa(s) encontrada(s) como "${`${criteria} = ${valor}`}" ${complementacao}`
     }
-    return <p>{mensagem}</p>
+    return mensagem
   }
   const mensagem = exibeResultado(tarefas.length)
   return (
-    <Container>
-      <Resultado>{mensagem}</Resultado>
+    <MainContainer>
+      <Titulo as="p">{mensagem}</Titulo>
       <ul>
         {tarefas.map((tarefas, index) => (
           <li key={index}>
@@ -57,7 +57,7 @@ const ListaDeTarefas = () => {
           </li>
         ))}
       </ul>
-    </Container>
+    </MainContainer>
   )
 }
 
