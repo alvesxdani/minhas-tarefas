@@ -27,7 +27,7 @@ const Formulario = () => {
     setTitulo('')
     setDescricao('')
     setPrioridade(enums.Prioridade.NORMAL)
-    navigate('/')
+    navigate('/minhas-tarefas/')
   }
 
   function handleTitulo({ target }: ChangeEvent<HTMLInputElement>) {
