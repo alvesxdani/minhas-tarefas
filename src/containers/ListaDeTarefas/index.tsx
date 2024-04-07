@@ -1,4 +1,8 @@
 import { useSelector } from 'react-redux'
+<<<<<<< HEAD
+=======
+import { MainContainer, Titulo } from '../../styles/index'
+>>>>>>> 6fa6c306587e0a41f5cb734f7a2884fbba601e51
 import Tarefa from '../../components/Tarefa'
 import { RootReducer } from '../../store'
 import { MainContainer, Titulo } from '../../styles'
