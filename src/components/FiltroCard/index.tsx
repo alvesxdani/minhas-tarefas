@@ -6,34 +6,41 @@ import { RootReducer } from '../../store'
 
 export type Props = {
   legenda: string
-  criteria: 'prioridade' | 'status' | 'todas'
-  valor?: enums.Prioridade | enums.Status
+  criteriaCard: 'prioridade' | 'status' | 'todas'
+  valorCard?: enums.Prioridade | enums.Status
 }
 
-const FiltroCard = ({ legenda, criteria, valor }: Props) => {
+const FiltroCard = ({ legenda, criteriaCard, valorCard }: Props) => {
   const dispatch = useDispatch()
-  const { filtro, tarefas } = useSelector((state: RootReducer) => state)
+  const { itens } = useSelector((state: RootReducer) => state.tarefas)
+  const { criteria, valor } = useSelector((state: RootReducer) => state.filtro)
+
   const contarTarefas = () => {
-    if (criteria === 'todas') return tarefas.itens.length
-    if (criteria === 'prioridade')
-      return tarefas.itens.filter((item) => item.prioridade === valor).length
-    if (criteria === 'status')
-      return tarefas.itens.filter((item) => item.status === valor).length
+    if (criteriaCard === 'todas') return itens.length
+    if (criteriaCard === 'prioridade')
+      return itens.filter((item) => item.prioridade === valorCard).length
+    if (criteriaCard === 'status')
+      return itens.filter((item) => item.status === valorCard).length
   }
-  const verificaAtivo = () => {
-    const mesmoCriterio = filtro.criteria === criteria
-    const mesmoValor = filtro.valor === valor
-    return mesmoCriterio && mesmoValor
-  }
+
   const filtrar = () =>
     dispatch(
       setCriteria({
-        criteria,
-        valor
+        criteria: criteriaCard,
+        valor: valorCard
       })
     )
+
+  const verificaAtivo = () => {
+    const mesmoCriterio = criteria === criteriaCard
+    const mesmoValor = valor === valorCard
+    return mesmoCriterio && mesmoValor
+  }
+
   const ativo = verificaAtivo()
+
   const contador = contarTarefas()
+
   return (
     <S.Card ativo={ativo} onClick={filtrar}>
       <S.Contador>{contador}</S.Contador>
