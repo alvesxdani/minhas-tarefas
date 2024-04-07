@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { ChangeEvent, FormEvent, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
@@ -79,27 +78,7 @@ const Formulario = () => {
         </Opcoes>
         <BotaoSalvar type="submit">Cadastrar</BotaoSalvar>
       </Form>
-=======
-import { Campo, MainContainer, Titulo } from '../../styles'
-
-const Formulario = () => {
-  return (
-    <MainContainer>
-      <Titulo>Nova tarefa</Titulo>
-      <form>
-        <Campo type="text" placeholder="Título" />
-        <textarea placeholder="Descrição da Tarefa" />
-        <Campo type="radio" name="prioridade" id="urgente" />{' '}
-        <label htmlFor="urgente">Urgente</label>
-        <Campo type="radio" name="prioridade" id="importante" />
-        <label htmlFor="urgente">importante</label>
-        <Campo type="radio" name="prioridade" id="normal" />{' '}
-        <label htmlFor="normal">Normal</label>
-        <button type="submit">Cadastrar</button>
-      </form>
->>>>>>> 6fa6c306587e0a41f5cb734f7a2884fbba601e51
     </MainContainer>
   )
 }
-
 export default Formulario
