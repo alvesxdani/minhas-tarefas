@@ -1,6 +1,5 @@
 import BarraLateral from '../../containers/BarraLateral'
 import Formulario from '../../containers/Formulario'
-
 const Cadastro = () => {
   return (
     <>
@@ -9,5 +8,4 @@ const Cadastro = () => {
     </>
   )
 }
-
 export default Cadastro
